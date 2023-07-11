@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<organizations>
+    <organization>
+        <creation_date>2021-01-01</creation_date>
+        <employee>
+            <birth_date>1990-01-01</birth_date>
+            <name>Alex Alexanyan</name>
+        </employee>
+        <employee>
+            <birth_date>1995-05-05</birth_date>
+            <name>Armen Armenyan</name>
+        </employee>
+        <name>Organization1</name>
+        <status>OPEN</status>
+    </organization>
+    <organization>
+        <creation_date>2022-02-02</creation_date>
+        <employee>
+            <birth_date>1985-10-10</birth_date>
+            <name>Ivan Ivanov</name>
+        </employee>
+        <name>Organization1</name>
+        <status>CLOSED</status>
+    </organization>
+</organizations>

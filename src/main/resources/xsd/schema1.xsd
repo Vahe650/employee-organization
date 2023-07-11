@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+
+
+    <xs:complexType name="employee">
+
+
+        <xs:sequence>
+
+
+            <xs:element minOccurs="0" name="birthDate" type="xs:string"/>
+
+
+            <xs:element minOccurs="0" name="name" type="xs:string"/>
+
+
+        </xs:sequence>
+
+
+    </xs:complexType>
+
+
+    <xs:complexType name="organization">
+
+
+        <xs:sequence>
+
+
+            <xs:element minOccurs="0" name="creationDate" type="xs:string"/>
+
+
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="employees" nillable="true" type="employee"/>
+
+
+            <xs:element minOccurs="0" name="name" type="xs:string"/>
+
+
+            <xs:element minOccurs="0" name="status" type="status"/>
+
+
+        </xs:sequence>
+
+
+    </xs:complexType>
+
+
+    <xs:complexType name="organizations">
+
+
+        <xs:sequence>
+
+
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="organizations" nillable="true" type="organization"/>
+
+
+        </xs:sequence>
+
+
+    </xs:complexType>
+
+
+    <xs:simpleType name="status">
+
+
+        <xs:restriction base="xs:string">
+
+
+            <xs:enumeration value="OPEN"/>
+
+
+            <xs:enumeration value="CLOSED"/>
+
+
+        </xs:restriction>
+
+
+    </xs:simpleType>
+
+
+</xs:schema>
