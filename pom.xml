@@ -62,13 +62,6 @@
                     </sources>
                     <outputDirectory>src/main/resources/xsd</outputDirectory>
                     <clearOutputDir>false</clearOutputDir>
-                    <transformSchemas>
-                        <transformSchema>
-                            <uri>/project/model</uri>
-                            <toPrefix>employee</toPrefix>
-                            <toFile>employee-gen.xsd</toFile>
-                        </transformSchema>
-                    </transformSchemas>
                 </configuration>
             </plugin>
         </plugins>
